@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200&display=swap");
+
+:root {
+    --leftpanel-color: #dafff5;
+    --rightpanel-color: #60d7b1;
+    --border-color: #339476;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #eaebed;
+}
+
+.container {
+    height: 80vh;
+    width: 65vw;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+/* ---- Left Panel ----- */
+
+.left {
+    height: 100%;
+    width: 50%;
+    background-color: var(--leftpanel-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px 0px 0px 5px;
+    padding: 7em 0;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(48, 48, 48);
+}
+
+.left .social {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--rightpanel-color);
+    color: rgb(48, 48, 48);
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.linkedin-color:hover {
+    background-color: whitesmoke;
+    border: 3px solid rgb(70, 70, 239);
+    color: rgb(70, 70, 239);
+}
+
+.google-color:hover {
+    background-color: whitesmoke;
+    border: 3px solid rgb(251, 66, 66);
+    color: rgb(251, 66, 66);
+}
+
+.facebook-color:hover {
+    border: 3px solid rgb(70, 70, 239);
+    color: rgb(70, 70, 239);
+    background-color: whitesmoke;
+}
+
+.left form input {
+    height: 3em;
+    width: 25em;
+    border: none;
+    background-color: var(--rightpanel-color);
+    padding: 10px;
+    margin: 10px 0;
+    color: rgb(48, 48, 48);
+}
+
+.left form .forgot {
+    color: rgb(48, 48, 48);
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.left form .forgot:hover {
+    color: rgb(92, 91, 91);
+    cursor: pointer;
+}
+
+.btn {
+    height: 3em;
+    width: 50%;
+    background-color: var(--rightpanel-color);
+    border: 2px solid var(--rightpanel-color);
+    margin: 0 auto;
+    border-radius: 50px;
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: var(--leftpanel-color);
+    cursor: pointer;
+    border: 2px solid var(--rightpanel-color);
+}
+/* ----- Right Panel ----- */
+
+.right {
+    height: 100%;
+    width: 50%;
+    background-color: var(--rightpanel-color);
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    color: rgb(254, 46, 46);
+}
+
+.right .text {
+    padding: 20px 20px 30px;
+    padding: 20px 20px 30px;
+}
+
+.right .btn {
+    width: 30%;
+    border: 2px solid var(--leftpanel-color);
+}
+
+.right .btn:hover {
+    background-color: var(--leftpanel-color);
+}
+
+.myself {
+    float: right;
+    text-decoration: none;
+    color: #147154;
+    font-weight: 900;
+}
